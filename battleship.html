@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <script defer src="battleship.js"></script>
+    <link rel="stylesheet" href="battleship.css">
+</head>
+<body>
+    <div class="winnerBox hidden"><span>Player 1 Wins!</span></div>
+    <div class="gameboard">
+        <div class="player1 board">
+            <div class="title"><span>Player 1</span></div>
+            <div class="row row1">
+                <div class="header item1"></div>
+                <div class="header item2">A</div>
+                <div class="header item3">B</div>
+                <div class="header item4">C</div>
+                <div class="header item5">D</div>
+                <div class="header item6">E</div>
+                <div class="header item7">F</div>
+                <div class="header item8">G</div>
+                <div class="header item9">H</div>
+                <div class="header item10">I</div>
+                <div class="header item11">J</div>
+            </div>
+            <div class="row row2">
+                <div class="header item1">1</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row3">
+                <div class="header item1">2</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row4">
+                <div class="header item1">3</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row5">
+                <div class="header item1">4</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row6">
+                <div class="header item1">5</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row7">
+                <div class="header item1">6</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row8">
+                <div class="header item1">7</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row9">
+                <div class="header item1">8</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row10">
+                <div class="header item1">9</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row11">
+                <div class="header item1">10</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="player2 board">
+            <div class="title"><span>Player 2</span></div>
+            <div class="row row1">
+                <div class="header item1"></div>
+                <div class="header item2">A</div>
+                <div class="header item3">B</div>
+                <div class="header item4">C</div>
+                <div class="header item5">D</div>
+                <div class="header item6">E</div>
+                <div class="header item7">F</div>
+                <div class="header item8">G</div>
+                <div class="header item9">H</div>
+                <div class="header item10">I</div>
+                <div class="header item11">J</div>
+            </div>
+            <div class="row row2">
+                <div class="header item1">1</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row3">
+                <div class="header item1">2</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row4">
+                <div class="header item1">3</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row5">
+                <div class="header item1">4</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row6">
+                <div class="header item1">5</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row7">
+                <div class="header item1">6</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row8">
+                <div class="header item1">7</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row9">
+                <div class="header item1">8</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row10">
+                <div class="header item1">9</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+            <div class="row row11">
+                <div class="header item1">10</div>
+                <div class="item2 square"></div>
+                <div class="item3 square"></div>
+                <div class="item4 square"></div>
+                <div class="item5 square"></div>
+                <div class="item6 square"></div>
+                <div class="item7 square"></div>
+                <div class="item8 square"></div>
+                <div class="item9 square"></div>
+                <div class="item10 square"></div>
+                <div class="item11 square"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
